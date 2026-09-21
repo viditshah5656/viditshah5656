@@ -4,6 +4,7 @@
 
 <div align="center">
   <a href="https://checkmyprofolio.github.io/"><img src="https://img.shields.io/badge/🌐_Portfolio-0B1220?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/viditshah5656"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/viditshah5656/Infera"><img src="https://img.shields.io/badge/⚡_Infera-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://orcid.org/0009-0009-0658-6157"><img src="https://img.shields.io/badge/🔬_ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" /></a>
 </div>
@@ -199,6 +200,8 @@ I’m comfortable moving between models, backend services, APIs, interfaces and 
 
 <p align="center">
   <a href="https://checkmyprofolio.github.io/"><b>🌐 Portfolio</b></a>
+  &nbsp; · &nbsp;
+  <a href="https://linkedin.com/in/viditshah5656"><b>LinkedIn</b></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/viditshah5656/Infera"><b>⚡ Infera</b></a>
   &nbsp; · &nbsp;
