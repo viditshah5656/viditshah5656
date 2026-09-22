@@ -84,4 +84,50 @@
 <!-- edge labels -->
 <text x="42" y="475" fill="#71809A" font-family="ui-monospace,monospace" font-size="10" letter-spacing="2">SYSTEMS ENGINEERING / END-TO-END BUILDING</text>
 <text x="1558" y="475" text-anchor="end" fill="#71809A" font-family="ui-monospace,monospace" font-size="10" letter-spacing="2">LOCAL · PRACTICAL · HUMAN-FOCUSED</text>
+
+<!-- animated motion layer: systems, inference and control loop -->
+<style>
+  .pulse { animation: pulse 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .floatA { animation: floatA 5s ease-in-out infinite; }
+  .floatB { animation: floatB 6s ease-in-out infinite; }
+  .scan { animation: scan 4s linear infinite; }
+  @keyframes pulse { 0%,100%{opacity:.45;transform:scale(.94)} 50%{opacity:1;transform:scale(1.08)} }
+  @keyframes floatA { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
+  @keyframes floatB { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
+  @keyframes scan { 0%{transform:translateX(-180px);opacity:0} 15%{opacity:.7} 85%{opacity:.7} 100%{transform:translateX(180px);opacity:0} }
+</style>
+
+<!-- flowing inference signals -->
+<g fill="#E7FBFF">
+  <circle r="5" class="pulse">
+    <animateMotion dur="3.6s" repeatCount="indefinite" path="M355 108 C475 108 500 155 596 175"/>
+  </circle>
+  <circle r="5" class="pulse">
+    <animateMotion dur="4.1s" begin="-1.4s" repeatCount="indefinite" path="M1245 108 C1125 108 1100 155 1004 175"/>
+  </circle>
+  <circle r="5" class="pulse">
+    <animateMotion dur="3.9s" begin="-2s" repeatCount="indefinite" path="M385 406 C500 406 535 357 610 337"/>
+  </circle>
+  <circle r="5" class="pulse">
+    <animateMotion dur="4.3s" begin="-2.7s" repeatCount="indefinite" path="M1215 406 C1100 406 1065 357 990 337"/>
+  </circle>
+</g>
+
+<!-- central inference heartbeat -->
+<circle cx="800" cy="260" r="72" fill="none" stroke="#7CE7FF" stroke-opacity=".28" stroke-width="2" class="pulse"/>
+<circle cx="800" cy="260" r="96" fill="none" stroke="#A48BFF" stroke-opacity=".12" stroke-width="1" class="pulse"/>
+
+<!-- active system nodes -->
+<g class="floatA">
+  <circle cx="132" cy="97" r="6" fill="#70E6FF" class="pulse"/>
+  <circle cx="1267" cy="97" r="6" fill="#AF8CFF" class="pulse"/>
+</g>
+<g class="floatB">
+  <circle cx="147" cy="395" r="6" fill="#79E8D0" class="pulse"/>
+  <circle cx="1237" cy="395" r="6" fill="#FF9BD8" class="pulse"/>
+</g>
+
+<!-- subtle moving scan -->
+<rect x="0" y="0" width="3" height="520" fill="#7CE7FF" opacity=".16" class="scan"/>
+
 </svg>
