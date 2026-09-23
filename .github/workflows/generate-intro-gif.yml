@@ -4,7 +4,6 @@ on:
   push:
     paths-ignore:
       - "intro-profile.gif"
-      - ".github/workflows/generate-intro-gif.yml"
 
 permissions:
   contents: write
@@ -22,13 +21,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg
 
-      - name: Generate optimized profile GIF
+      - name: Generate high-quality cinematic GIF
         run: |
           ffmpeg -y -i intro.mp4 \
-            -vf "fps=5,scale=400:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=8:stats_mode=diff[p];[s1][p]paletteuse=dither=none" \
-            intro-profile.gif
+            -vf "fps=10,scale=800:450:flags=lanczos,format=rgb24,palettegen=max_colors=128:stats_mode=full" \
+            /tmp/palette.png
 
-      - name: Commit generated GIF
+          ffmpeg -y -i intro.mp4 -i /tmp/palette.png \
+            -lavfi "fps=10,scale=800:450:flags=lanczos [x]; [x][1:v] paletteuse=dither=sierra2_4a:diff_mode=rectangle" \
+            -loop 0 intro-profile.gif
+
+      - name: Replace generated GIF
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -37,5 +40,5 @@ jobs:
             echo "No GIF changes to commit."
             exit 0
           fi
-          git commit -m "Generate profile intro animation"
+          git commit -m "Upgrade profile intro animation quality"
           git push
