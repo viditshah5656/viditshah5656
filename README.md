@@ -1,14 +1,9 @@
 <p align="center">
-  <video
-    src="https://github.com/viditshah5656/viditshah5656/raw/refs/heads/main/intro.mp4"
-    width="100%"
-    controls
-    autoplay
-    muted
-    loop
-    playsinline>
-  </video>
+  <a href="https://raw.githubusercontent.com/viditshah5656/viditshah5656/main/intro.mp4">
+    <img src="intro-profile.gif" alt="Vidit Shah — cinematic AI & robotics intro" width="100%" />
+  </a>
 </p>
+
 
 <div align="center">
   <a href="https://checkmyprofolio.github.io/"><img src="https://img.shields.io/badge/🌐_Portfolio-0B1220?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
