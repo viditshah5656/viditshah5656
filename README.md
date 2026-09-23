@@ -1,13 +1,7 @@
 <p align="center">
-  <a href="https://raw.githubusercontent.com/viditshah5656/viditshah5656/main/intro.mp4">
-    <img src="assets/vidit-systems-wallpaper.svg" alt="Vidit Shah — Watch the 10-second cinematic intro" width="100%" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://raw.githubusercontent.com/viditshah5656/viditshah5656/main/intro.mp4">
-    <b>▶ WATCH INTRO · 10 SECONDS</b>
-  </a>
+  <video width="100%" autoplay loop muted playsinline controls>
+    <source src="./intro.mp4" type="video/mp4">
+  </video>
 </p>
 
 <div align="center">
