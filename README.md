@@ -1,6 +1,12 @@
 <p align="center">
-  <video width="100%" autoplay loop muted playsinline controls>
-    <source src="./intro.mp4" type="video/mp4">
+  <video
+    src="https://github.com/viditshah5656/viditshah5656/raw/refs/heads/main/intro.mp4"
+    width="100%"
+    controls
+    autoplay
+    muted
+    loop
+    playsinline>
   </video>
 </p>
 
