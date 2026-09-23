@@ -1,0 +1,41 @@
+name: Generate profile intro animation
+
+on:
+  push:
+    paths-ignore:
+      - "intro-profile.gif"
+      - ".github/workflows/generate-intro-gif.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-intro-gif:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Generate optimized profile GIF
+        run: |
+          ffmpeg -y -i intro.mp4 \
+            -vf "fps=5,scale=400:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=8:stats_mode=diff[p];[s1][p]paletteuse=dither=none" \
+            intro-profile.gif
+
+      - name: Commit generated GIF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add intro-profile.gif
+          if git diff --cached --quiet -- intro-profile.gif; then
+            echo "No GIF changes to commit."
+            exit 0
+          fi
+          git commit -m "Generate profile intro animation"
+          git push
