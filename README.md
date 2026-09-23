@@ -1,9 +1,6 @@
 <p align="center">
-  <a href="https://raw.githubusercontent.com/viditshah5656/viditshah5656/main/intro.mp4">
-    <img src="intro-profile.gif" alt="Vidit Shah — cinematic AI & robotics intro" width="100%" />
-  </a>
+  <img src="assets/vidit-systems-wallpaper.svg" alt="Vidit Shah — Robotics, AI & Systems Engineering" width="100%" />
 </p>
-
 
 <div align="center">
   <a href="https://checkmyprofolio.github.io/"><img src="https://img.shields.io/badge/🌐_Portfolio-0B1220?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
