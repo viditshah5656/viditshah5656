@@ -163,6 +163,7 @@ I’m comfortable moving between models, backend services, APIs, interfaces and 
 | **AarnaAI** | AI-assisted market analysis experiment using LSTM, Random Forest and technical indicators in an interactive interface. | 🔒 Private R&D |
 | **Autonomous AI Portfolio** | Portfolio experience using local browser inference to make AI part of the interface itself. | [Live](https://checkmyprofolio.github.io/) |
 | **Binance Futures Testnet CLI** | API engineering around signed requests, validation, error handling and deterministic request construction. | [Repository](https://github.com/viditshah5656/binance-futures-trading-bot) |
+| **freeCodeCamp — Machine Learning with Python** | Five ML challenge implementations spanning opponent prediction, CNN vision, KNN recommendations, health-cost regression and SMS NLP. | [Five projects](freecodecamp-ml-python/) · [Verified certificate](https://www.freecodecamp.org/certification/rockstar5656/machine-learning-with-python-v7) |
 
 ### What each project says about me
 
@@ -175,6 +176,8 @@ I’m comfortable moving between models, backend services, APIs, interfaces and 
 **Autonomous AI Portfolio** → frontend engineering, browser inference, WebGPU and making an AI system part of the product itself.
 
 **Binance Futures Testnet CLI** → practical API integration, cryptographic request signing, validation and failure-boundary thinking.
+
+**freeCodeCamp ML Projects** → hands-on fundamentals spanning machine learning, model evaluation, computer vision, recommendation systems, and natural language processing.
 
 ---
 
