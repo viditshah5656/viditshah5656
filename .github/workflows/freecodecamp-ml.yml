@@ -1,0 +1,27 @@
+name: FreeCodeCamp ML source checks
+on:
+  push:
+    paths:
+      - 'freecodecamp-ml-python/**'
+      - '.github/workflows/freecodecamp-ml.yml'
+  pull_request:
+    paths:
+      - 'freecodecamp-ml-python/**'
+      - '.github/workflows/freecodecamp-ml.yml'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate notebook code
+        run: python freecodecamp-ml-python/check_notebooks.py
+      - name: Run official Rock Paper Scissors tests
+        working-directory: freecodecamp-ml-python/rock-paper-scissors
+        run: python -m unittest test_module -v
