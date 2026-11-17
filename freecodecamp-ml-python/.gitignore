@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+*.csv
+*.tsv
+cats_and_dogs/
+*.h5
+*.keras
